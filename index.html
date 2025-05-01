@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mikael Baldassin – Développeur Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav aria-label="Navigation principale" class="container">
+            <div class="nav-left">
+                <a href="#home" class="logo">M.BALDASSIN</a>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home" data-i18n-key="navHome">Accueil</a></li>
+                    <li><a href="#portfolio" data-i18n-key="navPortfolio">Portfolio</a></li>
+                    <li><a href="#skills" data-i18n-key="navSkills">Compétences</a></li>
+                    <li><a href="#contact" data-i18n-key="navContact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="language-switcher" aria-label="Sélecteur de langue">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1920px-Flag_of_France.svg.png"
+                    alt="Français" id="fr-flag" class="flag-icon selected">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="English"
+                    id="en-flag" class="flag-icon">
+            </div>
+        </nav>
+    </header>
+
+    <main class="content-wrapper">
+        <section id="home" class="hero section">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1 data-i18n-key="heroTitle">Mikael Baldassin</h1>
+                    <h2 data-i18n-key="heroSubtitle">Full Stack Developer</h2>
+                    <p data-i18n-key="heroText">I build responsive web applications with modern technologies, focusing on creating efficient and
+                        elegant solutions to complex problems.</p>
+                    <div class="hero-buttons">
+                        <a href="https://linkedin.baldassin.com" target="_blank" class="btn btn-linkedin">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="btn-icon">
+                                <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.baldassin.com" target="_blank" class="btn btn-github">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="btn-icon">
+                                <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Use a placeholder or your actual image -->
+                    <img src="media/image_hero.jpg" alt="Useless image">
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h1 data-i18n-key="portfolioTitle">Mon Portfolio</h1>
+                <p data-i18n-key="portfolioText" class="section-intro">
+                    Bienvenue dans mon portfolio, découvrez mes projets et créations.
+                </p>
+                
+                <div class="project-grid">
+                    <!-- Project 1: Personal Website -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="media/image_hero.jpg" alt="Personal Website">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n-key="project1Title">Site Web Personnel</h3>
+                            <p data-i18n-key="project1Desc">Mon portfolio professionnel développé avec HTML, CSS et JavaScript.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/bja34/personnalHomePage" target="_blank" class="btn btn-github">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" class="btn-icon">
+                                        <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                                    </svg>
+                                    <span data-i18n-key="viewProject">Voir le Projet</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Coding Challenge -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="media/coding_challenge.jpeg" alt="Coding Challenge Screenshot">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n-key="project2Title">Challenge de Codage</h3>
+                            <p data-i18n-key="project2Desc">Un projet de challenge technique développé pour une entreprise.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/bja34/2021_coding_challenge" target="_blank" class="btn btn-github">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" class="btn-icon">
+                                        <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                                    </svg>
+                                    <span data-i18n-key="viewProject">Voir le Projet</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Coming Soon -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="media/Designer.jpeg" alt="Coming Soon">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n-key="project3Title">Projets à Venir</h3>
+                            <p data-i18n-key="project3Desc">Restez à l'écoute pour découvrir mes futurs projets et réalisations !</p>
+                            <div class="project-links">
+                                <a href="https://github.baldassin.com" target="_blank" class="btn btn-github">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" class="btn-icon">
+                                        <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                                    </svg>
+                                    <span data-i18n-key="viewGithub">Voir mon GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h1 data-i18n-key="skillsTitle">Mes compétences & outils</h1>
+            <div class="skills-icons">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" title="HTML5">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML5">
+                </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" title="CSS3">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3">
+                </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" title="JavaScript">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
+                </a>
+                <a href="https://www.typescriptlang.org/" target="_blank" title="TypeScript">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                </a>
+                <a href="https://reactjs.org/" target="_blank" title="React">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
+                </a>
+                <a href="https://sass-lang.com/" target="_blank" title="Sass">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass">
+                </a>
+                <a href="https://www.php.net/" target="_blank" title="PHP">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" alt="PHP">
+                </a>
+                <a href="https://nodejs.org/" target="_blank" title="Node.js">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                </a>
+                <a href="https://www.mysql.com/" target="_blank" title="MySQL">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" alt="MySQL">
+                </a>
+                <a href="https://www.mongodb.com/" target="_blank" title="MongoDB">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                </a>
+                <a href="https://www.postgresql.org/" target="_blank" title="PostgreSQL">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="PostgreSQL">
+                </a>
+                <a href="https://www.figma.com/" target="_blank" title="Figma">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma">
+                </a>
+                <a href="https://git-scm.com/" target="_blank" title="Git">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="Git">
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 data-i18n-key="contactTitle">Collaborons ensemble !</h2>
+            <p data-i18n-key="contactText">
+                Contactez-moi pour tout projet ou collaboration !
+            </p>
+
+            <form class="contact-form" aria-label="Formulaire de contact" id="contactForm">
+                <label class="sr-only" for="name" data-i18n-key="formName">Votre nom</label>
+                <input id="name" type="text" name="name" placeholder="Votre nom" required 
+                    pattern="[A-Za-zÀ-ÿ\s-]{2,50}" 
+                    title="Le nom doit contenir entre 2 et 50 caractères, uniquement des lettres, espaces et tirets"
+                    data-i18n-key="formName">
+
+                <label class="sr-only" for="email" data-i18n-key="formEmail">Votre email</label>
+                <input id="email" type="email" name="email" placeholder="Votre email" required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Veuillez entrer une adresse email valide"
+                    data-i18n-key="formEmail">
+
+                <label class="sr-only" for="message" data-i18n-key="formMessage">Votre message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Votre message" required
+                    minlength="10" maxlength="1000"
+                    title="Le message doit contenir entre 10 et 1000 caractères"
+                    data-i18n-key="formMessage"></textarea>
+
+                <label for="terms">
+                    <input id="terms" type="checkbox" required>
+                    <a href="terms.html" target="_blank"><span data-i18n-key="formTerms">J'accepte les termes et conditions</span></a>
+                </label>
+
+                <button type="submit" class="submit-btn" data-i18n-key="formSubmit">
+                    Envoyer
+                </button>
+            </form>
+
+            <!-- Contact Section Social Icons -->
+            <div id="contact-social-icons"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-copyright">
+                © 2025 Mikael Baldassin. All rights reserved.
+            </div>
+            <!-- Footer Social Icons -->
+            <div id="footer-social-icons"></div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
