@@ -195,7 +195,6 @@ header nav {
 .hero {
     padding: var(--section-padding);
     min-height: 102vh;
-    /* Ensure it takes good vertical space */
     display: flex;
     align-items: center;
 }
@@ -246,9 +245,7 @@ header nav {
 
 .hero-image {
     flex-basis: 40%;
-    /* Adjust as needed */
     text-align: center;
-    /* Center image if container is wider */
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
     animation-delay: 1.8s;
@@ -256,11 +253,8 @@ header nav {
 
 .hero-image img {
     max-width: 350px;
-    /* Limit image size */
     border-radius: 50%;
-    /* Make it circular */
     object-fit: cover;
-    /* Ensure image covers space nicely */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -454,6 +448,17 @@ nav {
 .social-icons svg {
     width: 24px;
     height: 24px;
+}
+
+/* Hero image breakpoint */
+@media (max-width: 500px) {
+    .hero-image {
+        display: none;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
 }
 
 /* Mobile Navigation */
